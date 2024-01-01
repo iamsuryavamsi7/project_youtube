@@ -104,7 +104,7 @@ function playGame(playerPicked){
         .innerHTML = `${result}`;
 
     document.querySelector(`.div3_02`)
-        .innerHTML = `Your <img class="icon_01" src="/Project_Rock_Paper/IMAGES/${playerPicked}-emoji.png"> - Computer's <img class="icon_01" src="/Project_Rock_Paper/IMAGES/${computerPicked}-emoji.png">`;
+        .innerHTML = `Your <img class="icon_01" src="/Project_Rock_Paper_Scissor/IMAGES/${playerPicked}-emoji.png"> - Computer's <img class="icon_01" src="/Project_Rock_Paper_Scissor/IMAGES/${computerPicked}-emoji.png">`;
 
     document.querySelector(`.div3_03`)
         .innerHTML = ` Wins:- ${score.wins}, Looses:- ${score.looses}, Ties:- ${score.ties}`;
