@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: arial;
+}
+
+.line1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0 30px 30px ;
+}
+
+.buttons{
+    margin: 0px 0 0 30px;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button img{
+    padding: 40px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.div3{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.div3_01{
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.div3_02{
+    margin-bottom: 70px;
+}
+
+.button_Reset{
+    margin-top: 40px;
+}
+
+.emoji{
+
+    background-color: transparent;
+    border: white solid 3px;
+    border-radius: 50%;
+}
+
+.icon_01{
+    width: 70px;
+    margin: 0px 20px;
+}
