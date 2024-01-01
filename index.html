@@ -133,6 +133,7 @@
             padding: 10px 20px;
             margin-left: 20px;
             transition: all ease 0.5s;  
+            display: inline-block;
         }
 
         .hypertextlinks:hover{
@@ -161,6 +162,19 @@
 
         .iframe_01{
             border: solid red 2px;
+        }
+
+        @media (max-width: 970px) {
+
+            .container{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hypertextlinks{
+                margin-top: 10px;
+                margin-left: 0px;
+            }
+            
         }
 
         @media (max-width:600px){
