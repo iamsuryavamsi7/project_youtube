@@ -33,6 +33,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 100;
         }
 
         .hamburger{
@@ -101,13 +102,13 @@
         .container{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            border-right: solid 1px grey;
             column-gap: 40px;
             row-gap: 40px;
             margin-left: 50px;
             margin-top: 150px;
             margin-bottom: 50px;
             padding-bottom: 100px;
+            margin-right: 50px;
         }
 
         iframe{
@@ -142,10 +143,24 @@
 
         .div1_01{
             display: block;
+            position: relative;
         }
 
         .div1_02{
             display: inline-block;
+        }
+
+        .div1_11{
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-weight: bold;
+        }
+
+        .iframe_01{
+            border: solid red 1px;
         }
 
         @media (max-width:600px){
@@ -255,7 +270,10 @@
 
         <div class="div1">
 
-            <div class="div1_01"><iframe src="/Project_Todo_List/HTML/Project_Todo_List.html"></iframe></div>
+            <div class="div1_01">
+                <iframe class="iframe_01" src="/Project_Todo_List/HTML/Project_Todo_List.html"></iframe>
+                <div class="div1_11">Still in Development ...</div>
+            </div>
             <div class="div1_02">Project Todo List</div>
             <a class="hypertextlinks" target="_blank" href="/Project_Todo_List/HTML/todo_list.html">Project 06</a>
 
