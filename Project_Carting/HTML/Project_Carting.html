@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart Quantity </title>
+    <link rel="stylesheet" href="/Project_Carting/STYLE/Project_Carting.css">
+
+</head>
+<body>
+
+    <div> Cart Quantity </div>
+
+    <button id="first_Button" onclick="
+
+        document.querySelector(`.cart_status`)
+            .innerHTML = `Total Quantity of cart:- ${cartQuantity}`;
+
+    "> Show Quantity </button>
+
+    <button onclick="carting(9, 1);"> Add to Cart </button>
+
+    <button onclick="carting(8, 2);"> +2 </button>
+
+    <button onclick="carting(7, 3);"> +3 </button>
+
+    <button onclick="carting(6, 4)"> +4 </button>
+
+    <button onclick="carting(5, 5);"> +5 </button>
+
+    <button onclick="
+    
+        cartQuantity = 0;
+
+        document.querySelector(`.cart_status`)
+            .innerHTML = `Cart reseted to- ${cartQuantity}`;
+    
+    "> Reset Cart</button>
+
+    <div class="div1">
+
+            <button onclick="cartingminus(1, 1)"> Remove from Cart </button>
+
+        <button onclick="cartingminus(2, 2);"> -2 </button>
+
+        <button onclick="cartingminus(3, 3);"> -3 </button>
+        
+    </div>
+
+    <p class="cart_status"> Cart Status </p>
+
+    <script src="/Project_Carting/JS/Project_Carting.js"></script>
+    
+</body>
+</html>
