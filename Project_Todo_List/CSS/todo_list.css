@@ -1,3 +1,54 @@
 body{
+    font-family: arial;
     background-color: white;
+}
+
+.container{
+    margin: 20px 0px 0px 20px;
+}
+
+.div1{
+    font-size: 25px;
+}
+
+.div3{
+    display: grid;
+    grid-template-columns: 289px 199px 100px;
+    margin-top: 20px;
+    column-gap: 25px;
+    row-gap: 20px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.div2{
+    margin-top: 30px;
+}
+
+.div2_01{
+    padding: 10px 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.due_date{
+    font-size: 20px;
+    padding: 7px 10px;
+    margin-right: 20px;
+}
+
+.div2_02{
+    background-color: lightgreen;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.button_delete{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
 }

@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Todo List </title>
+    <link rel="stylesheet" href="/Project_Todo_List/CSS/todo_list.css">
+</head>
+<body>
+
     <div class="container">
 
-        <div class="div1"> Todo List Practice </div>
+        <div class="div1"> Todo List </div>
 
         <div class="div2">
 
-            <input class="div2_01">
-            <input type="date">
+            <input class="div2_01" placeholder="Todo Name">
+            <input class="due_date" type="date">
             <button class="div2_02" onclick="todoListAdding();"> Add </button>
 
         </div>
@@ -14,52 +24,7 @@
 
     </div>
 
-    <script>
-
-    todoList = [];
-
-    function function01(){
-
-        let htmlValue = ``;
-
-        for (let i = 0; i < todoList.length; i ++){
-
-            const newValue = todoList[i];
-
-            const html = `
-            <div>
-                ${newValue} 
-                <button onclick="
-
-                    todoList.splice(${i}, 1);
-                    function01();
-
-                "> Delete </button>
-            </div>`;
-
-            htmlValue += html;
-
-        }
-
-        document.querySelector(`.div3`)
-            .innerHTML = htmlValue;
-    }
-
-    function todoListAdding(){
-
-        const inputElement = document.querySelector(`.div2_01`);
-
-        const value = inputElement.value
-
-        todoList.push(value);
-
-        console.log(todoList);
-
-        inputElement.value = ``;
-
-        function01();
-
-    }
-
-
-    </script>
+    <script src="/Project_Todo_List/JS/todo_list.js"></script>
+    
+</body>
+</html>
