@@ -32,7 +32,7 @@
             left: 0;
             top: 0;
             right: 0;
-            height: 100px;
+            height: 150px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -77,12 +77,13 @@
             font-size: 25px;
             margin-left: 100px;
             list-style: none;
-            animation: nav_bar 1.5s;
         }
 
         .nav_bar ul li a{
             text-decoration: none;
             color: white;
+            font-weight: bold;
+
         }
 
         .active{
@@ -90,11 +91,15 @@
             padding: 10px 20px;
             border-radius: 20px;
             color: black;
-            font-weight: bold;
+            animation: active 1.2s;
+        }
+
+        .inactive{
+            animation: active .7s;
         }
 
         .inactive a{
-            transition: all ease 0.5s;
+            transition: all ease 0.2s;
         }
 
         .inactive a:hover{
@@ -103,6 +108,22 @@
             border-radius: 20px;
             padding: 10px 20px;
         }
+
+        .inactive2{
+            animation: active 1.7s;
+        }
+
+        .inactive2 a{
+            transition: all ease 0.2s;
+        }
+
+        .inactive2 a:hover{
+            background-color: lightblue;
+            color: black;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
 
         .container{
             display: grid;
@@ -150,24 +171,10 @@
 
         .div1_01{
             display: block;
-            position: relative;
         }
 
         .div1_02{
             display: inline-block;
-        }
-
-        .div1_11{
-            font-size: 20px;
-            color: red;
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            font-weight: bold;
-        }
-
-        .iframe_01{
-            border: solid red 5px;
         }
 
         @keyframes title{
@@ -190,7 +197,7 @@
             }
         }
 
-        @keyframes nav_bar{
+        @keyframes active{
             0%{
                 opacity: 0;
                 transform: translateY(50px);
@@ -285,7 +292,7 @@
             <ul>
                 <li class="inactive"> <a href="https://bio.site/iamsuryavamsi" target="_blank"> Home </a> </li>
                 <li class="active"> Projects </li>
-                <li class="inactive"> <a href="mailto:iamsuryavamsi@gmail.com"> Contact Me </a> </li>
+                <li class="inactive2"> <a href="mailto:iamsuryavamsi@gmail.com"> Contact Me </a> </li>
             </ul>
 
         </div>
@@ -347,7 +354,6 @@
 
             <div class="div1_01">
                 <iframe class="iframe_01" src="/Project_Todo_List/HTML/Project_Todo_List.html"></iframe>
-                <div class="div1_11">Still in Development ...</div>
             </div>
             <div class="div1_02">Project Todo List</div>
             <a class="hypertextlinks" target="_blank" href="/Project_Todo_List/HTML/Project_Todo_List.html">Project 06</a>
