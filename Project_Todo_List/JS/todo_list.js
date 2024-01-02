@@ -1,56 +1,70 @@
-todoList = [];
+let todoList = [];
 
-document.querySelector(`.div3`)
-        .innerHTML = htmlValue;
+function loopTodo(){
 
-function function01(){
+    let insideValue = ``;
 
-    let htmlValue = ``;
+    let todoHtml = ``;
 
-    for (let i = 0; i < todoList.length; i ++){
+    for(let i = 0; i < todoList.length; i ++){
 
-        const newValue = todoList[i];
+        insideValue = todoList[i];
 
-        const { name, dueDate } = newValue;
+        const { name, duedate } = insideValue;
 
         const html = `
-        <div>${name}</div>
-        <div>${dueDate}</div>
-        <div><button class="button_delete" onclick="
+        
+        <div>
+            
+            ${name}
+        
+        </div>
+        <div>
+            
+            ${duedate}
 
+        </div>
+        <div>
+            
+            <button class="delete_button" onclick="
+            
                 todoList.splice(${i}, 1);
-                function01();
+
+                loopTodo();
 
             "> Delete </button>
-        </div>`;
+            
+        </div>
 
-        htmlValue += html;
+        `;
 
+        todoHtml += html;
+        
     }
 
     document.querySelector(`.div3`)
-        .innerHTML = htmlValue;
+        .innerHTML = todoHtml;
 }
 
-function todoListAdding(){
+function AddTodo(){
 
-    const inputElement = document.querySelector(`.div2_01`);
+    const inputElement = document.querySelector(`.input_text`);
 
-    const value = inputElement.value;
+    const inputValue = inputElement.value;
 
-    const dateInputElement = document.querySelector(`.due_date`);
+    const dueDateInputElement = document.querySelector(`.due_date`);
 
-    const dueDate = dateInputElement.value;
+    const dueDateInputValue = dueDateInputElement.value;
 
     todoList.push({
-        name: value,
-        dueDate: dueDate,
+        name: inputValue,
+        duedate: dueDateInputValue
     });
 
     console.log(todoList);
 
     inputElement.value = ``;
 
-    function01();
+    loopTodo();
 
 }
