@@ -1,3 +1,5 @@
+
+
         let count = localStorage.getItem(`count`) ||``;
 
         document.querySelector(`.class1`)
@@ -16,7 +18,7 @@
 
         function equalsumbol(){
 
-            count  =  eval(count);
+            count  =  String(eval(count));
 
             document.querySelector(`.class1`)
                 .innerHTML = count;
@@ -27,7 +29,7 @@
 
         function clearFunction(){
 
-            count = count - count;
+            count = ``;
 
             document.querySelector(`.class1`)
                 .innerHTML = count;

@@ -12,6 +12,8 @@ body{
 .class1{
     font-size: 25px;
     color: white;
+    background-color: black;
+    height: 50px;
 }
 
 button{
