@@ -133,29 +133,30 @@ let intervalID;
 function autoplay(){
 
     if (!isAutoPlaying){
-        intervalID = setInterval(function () {
+    
+        intervalID = setInterval(function(){
 
-            const playerMove = computerChoosed();
+        const playerMove = computerChoosed();
 
-            playGame(playerMove);
-            
-        }, 800);
+        playGame(playerMove);
+
+        }, 800)
+
         isAutoPlaying = true;
 
-        let autobutton = document.querySelector(`.auto_play`);
+        document.querySelector(`.auto_play`)
+            .innerHTML = "Stop Auto Play"
+            
 
-        autobutton.innerHTML = "STOP";
-
-    } else{
+    } else {
 
         clearInterval(intervalID);
 
-        let autobutton = document.querySelector(`.auto_play`);
-
-        autobutton.innerHTML = "Auto Play";
-
         isAutoPlaying = false;
-    
+
+        document.querySelector(`.auto_play`)
+            .innerHTML = "Start Auto Play"
+
     }
 
 }
