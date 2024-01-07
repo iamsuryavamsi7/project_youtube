@@ -141,9 +141,21 @@ function autoplay(){
             
         }, 800);
         isAutoPlaying = true;
+
+        let autobutton = document.querySelector(`.auto_play`);
+
+        autobutton.innerHTML = "STOP";
+
     } else{
 
         clearInterval(intervalID);
+
+        let autobutton = document.querySelector(`.auto_play`);
+
+        autobutton.innerHTML = "Auto Play";
+
+        isAutoPlaying = false;
     
     }
+
 }
