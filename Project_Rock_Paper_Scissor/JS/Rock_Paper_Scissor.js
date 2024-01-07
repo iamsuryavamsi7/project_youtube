@@ -125,3 +125,25 @@ function removeScore(){
         .innerHTML = ` Wins:- ${score.wins}, Looses:- ${score.looses}, Ties:- ${score.ties}`;
 
 }
+
+let isAutoPlaying = false;
+
+let intervalID;
+
+function autoplay(){
+
+    if (!isAutoPlaying){
+        intervalID = setInterval(function () {
+
+            const playerMove = computerChoosed();
+
+            playGame(playerMove);
+            
+        }, 800);
+        isAutoPlaying = true;
+    } else{
+
+        clearInterval(intervalID);
+    
+    }
+}
