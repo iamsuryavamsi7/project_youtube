@@ -143,6 +143,49 @@
             transition: all ease 1s;
         }
 
+        /* Filter Style */
+
+        .filter{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .filter button{
+            padding: 10px 20px;
+            font-size: 21px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: all ease .4s;
+        }
+
+        .filter_01{
+            border: solid red 5px;
+            padding-bottom: 40px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .filter_02{
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            left: 40%;
+            bottom: 0px;
+            margin-bottom: 10px;
+        }
+
+        .isActive{
+            background-color: black;
+            color: white;
+        }
+
         /* Grid View Style */
 
         .container{
